@@ -32,7 +32,7 @@ public struct KeychainItemOptions {
     let itemAccessibility: KeychainItemAccessibility
     
     public init(itemClass: KeychainItemClass = .GenericPassword,
-         itemAccessibility: KeychainItemAccessibility = .WhenUnlocked) {
+         itemAccessibility: KeychainItemAccessibility = .AfterFirstUnlock) {
         self.itemClass = itemClass
         self.itemAccessibility = itemAccessibility
     }
